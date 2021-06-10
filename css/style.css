@@ -1,0 +1,49 @@
+.w3-container {
+    padding: 20px 20px;
+    text-align: center;
+    margin: 0;
+    
+    
+}
+
+.form{
+    display: inline-block;
+    width: 100%;
+}
+.txt{
+    width: 80%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border-color: rgb(102, 159, 245);
+    background-color: darkgrey;
+    color: rgb(0, 0, 0);
+    
+    
+}
+.btn{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+#sidenav{
+    padding: 10px 10px;
+    
+}
+#sidenav a {
+    padding: 10px 10px;
+    margin-left: 10px;
+}
+.btn{
+    
+    background-color: black;
+    color: cornsilk;
+    
+}
+#items{
+    box-sizing: border-box;
+    
+    
+}
+
+

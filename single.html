@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My CookBook</title>
+</head>
+<body class="w3-black">
+<!--Sidebar NAvigation-->
+    <div class="w3-sidebar w3-bar-block w3-sand w3-animate-left" id="sidenav" style="width:50%; display: none;">
+        <div class="w3-container"> 
+        <a href="#" class="w3-button w3-right " onclick="w3_close()"><i class="fa fa-close"></i></a>
+        <br>
+        <hr>
+        <h2><a href="index.html"> My Cook Book</a></h2>
+        <hr>
+        </div>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">About</a>
+        <a href="#" class="w3-bar-item w3-button">Contact</a>
+        
+        <div class="w3-display-bottommiddle">
+            <p style="font-size: 11px;">&copy; All Rights Reserved</p>
+        </div>
+        
+      </div>
+<!---->
+    <header class="w3-container w3-black sticky w3-mobile" style="background-image: url('./image/back.jpg'); height: auto">
+
+        <div class="w3-row">
+            <div class="w3-left"><a href="#" id="menubtn" onclick="w3_open()" ><i class="fa fa-bars" style="color: azure;"></i></a></div>
+        </div>
+        <h1 style="color: rgb(250, 249, 249);"><a href="index.html">My CookBook</a></h1>
+        <br>
+        <br>
+        
+       
+
+    </header>
+
+
+
+    <div id="recipedetails"></div>
+    
+      
+    
+  <script>
+      function w3_open(){
+          document.getElementById('sidenav').style.display = 'block';
+      }
+      function w3_close(){
+          document.getElementById('sidenav').style.display = 'none';
+      }
+  </script>
+  <script src="js/script.js"></script>
+  
+       <script>
+           showRecipe();
+       </script>
+ 
+</body>
+</html>
