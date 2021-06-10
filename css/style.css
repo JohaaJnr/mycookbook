@@ -46,4 +46,8 @@
     
 }
 
-
+.w3-border{
+    background-color: black;
+    color: cornsilk;
+    padding: 5px;
+}

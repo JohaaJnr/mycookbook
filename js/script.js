@@ -79,6 +79,7 @@ $('.form').on('submit', function(e){
 });
 
 $('#pizza').click(function(){
+ 
     $.getJSON(
         'https://forkify-api.herokuapp.com/api/search?q=pizza',
         function(pizza){
@@ -976,7 +977,9 @@ function showRecipe(){
        'https://forkify-api.herokuapp.com/api/get?rId='+id,
        function(data){
            let ingridient = data.recipe;
-          
+          var rank = ingridient.ingredients.length;
+
+         
                $('#recipedetails').append(`
                
                <div class="w3-row ">
@@ -986,15 +989,14 @@ function showRecipe(){
     <img src="${ingridient.image_url}" style="width: 100%; height: 30%">
     <div class="w3-container">
     <h4>${ingridient.title}</h4>
-    <p>by - ${ingridient.publisher}</p>
+    <p>Author - ${ingridient.publisher}</p>
     <hr>
-    <h4>Ingridients:</h4>
-    
-    <table class="w3-table w3-bordered" >
-           <tr>
-           <td>${ingridient.ingredients}</td>
-           </tr> 
+    <h4 class="w3-border">Ingridients:</h4>
+    <hr>
+    <table class="w3-table w3-bordered" id="ingrednt">
+            
     </table>
+    <hr>
     <button class="w3-button w3-green"><a target="_blank" href="${ingridient.source_url}">View Full Recipe</a></button>
        <button class="w3-button w3-green"><a href="index.html">Back to Home</a></button>
        </div>
@@ -1004,6 +1006,15 @@ function showRecipe(){
                
                `);
             
-       }     
+       
+    
+    for(i=0; i<rank; i++){
+
+        $('#ingrednt').append(`
+            <tr ><td><i class="fa  fa-check-circle"></i>&ensp;${ingridient.ingredients[i]}</td></tr>
+        `);
+
+      }  
+    }  
     );
     }
