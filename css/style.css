@@ -50,4 +50,15 @@
     background-color: black;
     color: cornsilk;
     padding: 5px;
+    
+}
+
+.w3-dropdown:hover .w3-dropdown-content,
+.w3-dropdown:focus .w3-dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.w3-card-4{
+    border-radius: 15px;
 }

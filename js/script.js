@@ -7,11 +7,11 @@ $(document).ready(function () {
             $.each(list, function (i) {
                 $('#recipe').append(`
                 <div class="w3-col s4 w3-mobile" style="padding: 5px">
-                <div class="w3-card-4 w3-dark-grey">
+                <div class="w3-card-4 w3-dark-grey" >
 
-                <div class="w3-container w3-center">
+                <div class="w3-container w3-center" >
                   <p><h3 style="margin:0px; height:20px;">${list[i].title}</h3></p>
-                  <img src="${list[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${list[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${list[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${list[i].recipe_id}');">View Details</a></button>
@@ -52,7 +52,7 @@ $('.form').on('submit', function(e){
                 <hr>
                 <div class="w3-row-padding">
                 <div class="w3-col s6  w3-center" style="padding:10px">
-                <img src="${result[i].image_url}" alt="image" style="width:100%; height:300px">
+                <img src="${result[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                 </div> 
                 <div class=""w3-col s6 w3-dark-grey w3-center>
                 <h3>${result[i].title}</h3>
@@ -93,7 +93,7 @@ $('#pizza').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${pizzas[i].title}</h3></p>
-                  <img src="${pizzas[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${pizzas[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${pizzas[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${pizzas[i].recipe_id}');">View Details</a></button>
@@ -134,7 +134,7 @@ $('#pasta').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${pastas[i].title}</h3></p>
-                  <img src="${pastas[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${pastas[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${pastas[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${pastas[i].recipe_id}');">View Details</a></button>
@@ -174,7 +174,7 @@ $('#burger').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${burgers[i].title}</h3></p>
-                  <img src="${burgers[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${burgers[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${burgers[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${burgers[i].recipe_id}');">View Details</a></button>
@@ -214,7 +214,7 @@ $('#fries').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${frieds[i].title}</h3></p>
-                  <img src="${frieds[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${frieds[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${frieds[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${frieds[i].recipe_id}');">View Details</a></button>
@@ -255,7 +255,7 @@ $('#chicken').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${chicks[i].title}</h3></p>
-                  <img src="${chicks[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${chicks[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${chicks[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${chicks[i].recipe_id}');">View Details</a></button>
@@ -295,7 +295,7 @@ $('#beef').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${beefies[i].title}</h3></p>
-                  <img src="${beefies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${beefies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${beefies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${beefies[i].recipe_id}');">View Details</a></button>
@@ -335,7 +335,7 @@ $('#lamb').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${lambies[i].title}</h3></p>
-                  <img src="${lambies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${lambies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${lambies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${lambies[i].recipe_id}');">View Details</a></button>
@@ -375,7 +375,7 @@ $('#duck').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${duckies[i].title}</h3></p>
-                  <img src="${duckies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${duckies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${duckies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${duckies[i].recipe_id}');">View Details</a></button>
@@ -415,7 +415,7 @@ $('#pork').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${porkies[i].title}</h3></p>
-                  <img src="${porkies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${porkies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${porkies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${porkies[i].recipe_id}');">View Details</a></button>
@@ -455,7 +455,7 @@ $('#steak').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${steakies[i].title}</h3></p>
-                  <img src="${steakies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${steakies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${steakies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${steakies[i].recipe_id}');">View Details</a></button>
@@ -495,7 +495,7 @@ $('#bbq').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${bbqies[i].title}</h3></p>
-                  <img src="${bbqies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${bbqies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${bbqies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${bbqies[i].recipe_id}');">View Details</a></button>
@@ -535,7 +535,7 @@ $('#kebab').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${kebabies[i].title}</h3></p>
-                  <img src="${kebabies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${kebabies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${kebabies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${kebabies[i].recipe_id}');">View Details</a></button>
@@ -575,7 +575,7 @@ $('#ribs').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${ribsies[i].title}</h3></p>
-                  <img src="${ribsies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${ribsies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${ribsies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${ribsies[i].recipe_id}');">View Details</a></button>
@@ -615,7 +615,7 @@ $('#lobster').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${lobsteries[i].title}</h3></p>
-                  <img src="${lobsteries[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${lobsteries[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${lobsteries[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${lobsteries[i].recipe_id}');">View Details</a></button>
@@ -655,7 +655,7 @@ $('#sushi').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${sushiies[i].title}</h3></p>
-                  <img src="${sushiies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${sushiies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${sushiies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${sushiies[i].recipe_id}');">View Details</a></button>
@@ -695,7 +695,7 @@ $('#crab').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${crabies[i].title}</h3></p>
-                  <img src="${crabies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${crabies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${crabies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${crabies[i].recipe_id}');">View Details</a></button>
@@ -735,7 +735,7 @@ $('#pudding').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${puddingies[i].title}</h3></p>
-                  <img src="${puddingies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${puddingies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${puddingies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${puddingies[i].recipe_id}');">View Details</a></button>
@@ -775,7 +775,7 @@ $('#cake').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${cakeies[i].title}</h3></p>
-                  <img src="${cakeies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${cakeies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${cakeies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${cakeies[i].recipe_id}');">View Details</a></button>
@@ -815,7 +815,7 @@ $('#chocolate').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${chocolateies[i].title}</h3></p>
-                  <img src="${chocolateies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${chocolateies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${chocolateies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${chocolateies[i].recipe_id}');">View Details</a></button>
@@ -855,7 +855,7 @@ $('#icecream').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${icecreamies[i].title}</h3></p>
-                  <img src="${icecreamies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${icecreamies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${icecreamies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${icecreamies[i].recipe_id}');">View Details</a></button>
@@ -895,7 +895,7 @@ $('#donuts').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${donutsies[i].title}</h3></p>
-                  <img src="${donutsies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${donutsies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${donutsies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${donutsies[i].recipe_id}');">View Details</a></button>
@@ -935,7 +935,7 @@ $('#chips').click(function(){
 
                 <div class="w3-container w3-center">
                   <p><h3 style="margin:0px; height:20px;">${chipsies[i].title}</h3></p>
-                  <img src="${chipsies[i].image_url}" alt="image" style="width:100%; height:300px">
+                  <img src="${chipsies[i].image_url}" alt="image" style="width:100%; height:300px; border-radius:10px">
                   <h5>${chipsies[i].publisher}</h5>
                 
                   <button class="w3-button w3-green"><a onclick="getRecipe('${chipsies[i].recipe_id}');">View Details</a></button>
@@ -986,7 +986,7 @@ function showRecipe(){
     <div class="w3-container ">
     
     <div class="w3-card w3-light-gray w3-mobile" style="padding: 10px 10px">
-    <img src="${ingridient.image_url}" style="width: 100%; height: 30%">
+    <img src="${ingridient.image_url}" style="width: 100%; height: 30%; border-radius:10px">
     <div class="w3-container">
     <h4>${ingridient.title}</h4>
     <p>Author - ${ingridient.publisher}</p>
